@@ -57,9 +57,9 @@ public class AdminPage extends BasePage {
         waitBySeconds(5);
     }
     @Step("Kayıt yapıldığı kontrol edilir.")
-    public void controlRecord(String userName) {
+    public boolean controlRecord(String userName) {
         List<WebElement> recordList = findElements(AdminPageConstants.tableRows);
-        Assert.assertTrue(recordList.get(0).getText().contains(userName));
+        return recordList.get(0).getText().contains(userName);
     }
     @Step("Düzenle buttonuna tıklanır.")
     public void clickEditButton() {
