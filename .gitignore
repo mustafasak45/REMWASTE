@@ -1,0 +1,33 @@
+# Maven derleme klasörü
+/target/
+
+# IntelliJ IDEA klasör ve dosyaları
+.idea/
+*.iml
+*.iws
+
+# Derlenmiş Java sınıfları
+*.class
+
+# Log dosyaları
+*.log
+
+# OS sistem dosyaları (Mac / Windows)
+.DS_Store
+Thumbs.db
+
+# Test çıktıları ve raporlar
+/test-output/
+/screenshots/
+/extent-reports/
+/allure-results/
+/allure-report/
+
+# Geçici ve yedek dosyalar
+*.tmp
+*.bak
+*.swp
+
+# Kod kapsam raporları (örnek: Jacoco)
+jacoco.exec
+/coverage-report/
